@@ -31,7 +31,7 @@ public class SimpleDB
   public static final String DOMAIN_FAMILIA = "FAMILIA";
   public static final String DOMAIN_PARTICIPANTE = "PARTICIPANTE";
   public static final String DOMAIN_SORTEIO = "SORTEIO";
-  AWSCredentials credentials = new BasicAWSCredentials("AKIAIRAOQHSGAWM6VZJQ", "xXJcmIorChe7Yk7n8bN+kGCrJG0AgIvQAj1H5F7c");
+  AWSCredentials credentials = new BasicAWSCredentials("", "");
 
   public String buscarNomePorId(String paramString)
   {
