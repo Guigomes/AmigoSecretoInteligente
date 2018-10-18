@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_sms" android:background="@color/fundo_padrao" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/fundo_padrao" android:padding="10.0sp" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@android:style/Animation.Dialog">
+        <TextView android:textColor="@android:color/black" android:gravity="center" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_informe_celular" style="@android:color/black" />
+        <EditText android:id="@id/editTextDialogUserInput" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_telefone_participante" android:inputType="phone">
+            <requestFocus />
+        </EditText>
+        <EditText android:id="@id/edtAtivacao" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="number">
+            <requestFocus />
+        </EditText>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/ok" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/ok" android:layout_weight="1.0" style="@style/botao" />
+            <Button android:id="@id/trocarNumero" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/trocar_numero" android:layout_weight="1.0" style="@style/botao" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

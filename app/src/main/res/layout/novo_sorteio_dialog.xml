@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_root" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pergunta_titulo" />
+    <EditText android:id="@id/editTitulo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="17" android:inputType="text">
+        <requestFocus />
+    </EditText>
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pergunta_revelacao" />
+    <EditText android:id="@id/editData" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="date" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pergunta_valor_presente" />
+    <EditText android:id="@id/editPreco" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/criar" android:layout_weight="1.0" android:onClick="novoSorteio" style="@style/botao" />
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/cancelar" android:layout_weight="1.0" android:onClick="cancelar" style="@style/botao" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/containerListar" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?android:dividerHorizontal" android:animateLayoutChanges="true" android:showDividers="middle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0sp" android:text="@string/sorteios" />
+    <ListView android:id="@id/list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:dividerHeight="5.0sp" android:layout_weight="1.0" />
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/aviso_nao_ativado" android:background="@color/red_dark" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0sp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_person_md" android:contentDescription="@android:string/yes" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/txtAviso" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/msg_ativar" android:layout_weight="1.0" />
+    </LinearLayout>
+    <Button android:textSize="14.0sp" android:id="@id/btnAtivarAgora" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginRight="5.0dip" android:text="@string/ltrl_ativar_agora" android:layout_weight="1.0" android:onClick="ativarAgora" style="@style/botao" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:background="@drawable/bar_bg_gray" android:paddingTop="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@android:string/yes" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0sp" android:layout_weight="1.0">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center" android:id="@id/txtNomecC" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center" android:id="@id/txtTelefoneContato" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+        <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" />
+    </LinearLayout>
+    <TextView android:id="@id/id" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

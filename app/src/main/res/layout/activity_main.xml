@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/container" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/background" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="?android:dividerHorizontal" android:animateLayoutChanges="true">
+        <Button android:layout_gravity="center" android:id="@id/btnNovoSorteio" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="@string/criar_novo_sorteio" android:onClick="addView" style="@style/botao" />
+        <Button android:layout_gravity="center" android:id="@id/btnListarSorteios" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="@string/sorteios_criados" android:onClick="criarSorteio" style="@style/botao" />
+        <Button android:layout_gravity="center" android:id="@id/btn_sorteios_participo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="@string/sorteios_participados" style="@style/botao" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/menu" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

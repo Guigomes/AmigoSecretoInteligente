@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/red_dark" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_person" android:contentDescription="@android:string/yes" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/indiceParticipante" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:id="@id/imgViewExcluiParticipante" android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/delete" android:layout_weight="6.0" android:contentDescription="@android:string/yes" />
+    </LinearLayout>
+    <EditText android:id="@id/edtParticipante" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_nome_participante" android:inputType="textPersonName" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/spinnerLayouyt" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Spinner android:id="@id/spinner1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/btnPlus" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:src="@drawable/plus" android:contentDescription="@android:string/yes" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/edtTelefone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/hint_telefone_participante" android:layout_weight="1.0" android:inputType="phone" />
+        <ImageButton android:id="@id/btnContatos" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:src="@drawable/search" android:contentDescription="@android:string/yes" />
+    </LinearLayout>
+</LinearLayout>
